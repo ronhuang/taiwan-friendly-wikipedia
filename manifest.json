@@ -1,11 +1,11 @@
 {
-  "name": "Taiwan friendly Wikipedia",
+  "name": "__MSG_extName__",
   "version": "0.1",
-  "description": "Show Wikipedia pages in Traditional Chinese (Taiwan)",
+  "description": "__MSG_extDesc__",
   "background_page": "background.html",
   "page_action": {
     "default_icon": "icon-19.png",
-    "default_title": "Show page in Traditional Chinese (Taiwan)"
+    "default_title": "__MSG_actionTitle__"
   },
   "permissions" : [
     "tabs"
@@ -14,5 +14,6 @@
     "16": "icon-16.png",
     "48": "icon-48.png",
     "128": "icon-128.png"
-  }
+  },
+  "default_locale": "en"
 }

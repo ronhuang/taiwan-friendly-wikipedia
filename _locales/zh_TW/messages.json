@@ -1,0 +1,14 @@
+{
+  "extName": {
+    "message": "台灣友善的維基百科",
+    "description": "Extension name"
+  },
+  "extDesc": {
+    "message": "顯示正體中文的維基百科",
+    "description": "Extension description"
+  },
+  "actionTitle": {
+    "message": "將這頁顯示成正體中文",
+    "description": "Page action title"
+  }
+}

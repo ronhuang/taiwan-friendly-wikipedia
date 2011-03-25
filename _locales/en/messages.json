@@ -1,0 +1,14 @@
+{
+  "extName": {
+    "message": "Taiwan friendly Wikipedia",
+    "description": "Extension name"
+  },
+  "extDesc": {
+    "message": "Show Wikipedia pages in Traditional Chinese (Taiwan)",
+    "description": "Extension description"
+  },
+  "actionTitle": {
+    "message": "Show page in Traditional Chinese (Taiwan)",
+    "description": "Page action title"
+  }
+}
