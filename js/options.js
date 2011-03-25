@@ -20,7 +20,7 @@ function save_options() {
 
 // Restores select box state to saved value from localStorage.
 function restore_options() {
-  var ar = JSON.parse(localStorage["automatic_redirect"] || false);
+  var ar = JSON.parse(localStorage["automatic_redirect"] || true);
   if (!ar)
     return;
 
