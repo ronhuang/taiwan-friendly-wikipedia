@@ -21,6 +21,7 @@
       chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
         // If in Chinese Wikipedia but not showing Traditional Chinese...
         if (0 < tab.url.indexOf("://zh.wikipedia.org/") &&
+            -1 == tab.url.indexOf("://zh.wikipedia.org/w/index.php") &&
             -1 == tab.url.indexOf("://zh.wikipedia.org/zh-tw/")) {
           var ar = JSON.parse(localStorage["automatic_redirect"] || false);
 
