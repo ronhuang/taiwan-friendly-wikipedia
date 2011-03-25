@@ -19,10 +19,10 @@
 
       // Listen when user clicks on the page action icon.
       chrome.pageAction.onClicked.addListener(function (tab) {
-        var re = new RegExp('http://zh.wikipedia.org/.*/(.*)');
+        var re = new RegExp('(.*)://zh.wikipedia.org/.*/(.*)');
         var m = re.exec(tab.url);
         if (m) {
-          var url = 'http://zh.wikipedia.org/zh-tw/' + m[1];
+          var url = m[1] + '://zh.wikipedia.org/zh-tw/' + m[2];
           chrome.tabs.update(tab.id, {url: url});
         }
       });
