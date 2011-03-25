@@ -9,7 +9,7 @@
     <script>
       // Redirect to Traditional Chinese (Taiwan).
       function redirect (tab) {
-        var re = new RegExp('(.*)://zh.wikipedia.org/.*/(.*)');
+        var re = new RegExp('(.*)://zh.wikipedia.org/[^/]*/(.*)');
         var m = re.exec(tab.url);
         if (m) {
           var url = m[1] + '://zh.wikipedia.org/zh-tw/' + m[2];
