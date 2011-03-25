@@ -32,6 +32,7 @@ function init() {
   // i18n
   document.getElementById('optionsTitle').innerHTML = chrome.i18n.getMessage('optionsTitle');
   document.getElementById('optionsAutoRedirect').innerHTML = chrome.i18n.getMessage('optionsAutoRedirect');
+  document.getElementById('optionsAutoRedirectDesc').innerHTML = chrome.i18n.getMessage('optionsAutoRedirectDesc');
   document.getElementById('optionsSave').innerHTML = chrome.i18n.getMessage('optionsSave');
 
   // Options

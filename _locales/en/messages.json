@@ -19,6 +19,10 @@
     "message": "Automatic redirect",
     "description": "Label for automatic redirect"
   },
+  "optionsAutoRedirectDesc": {
+    "message": "If disabled, you have to manually click <img src=\"img/icon-19.png\"/> on the Ombibox to redirect to Traditional Chinese (Taiwan) version of Wikipedia.",
+    "description": "Description for automatic redirect"
+  },
   "optionsSave": {
     "message": "Save",
     "description": "Caption for the save button"
