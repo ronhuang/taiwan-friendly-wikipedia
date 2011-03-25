@@ -1,0 +1,13 @@
+/**
+ * Copyright (c) 2011 Ron Huang. All rights reserved.  Use of this
+ * source code is governed by a BSD-style license that can be found in the
+ * LICENSE file.
+ */
+
+#status {
+  display: none;
+  margin-left: 3px;
+  padding: 1px 2px;
+  font-size: 15px;
+  color: #f00;
+}

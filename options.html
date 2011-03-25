@@ -1,65 +1,16 @@
 <html>
 <head>
 <title id="optionsTitle"></title>
-<script type="text/javascript">
-// Saves options to localStorage.
-function save_options() {
-  var checkbox = document.getElementById("automatic_redirect");
-  localStorage["automatic_redirect"] = checkbox.checked;
-
-  // Update status to let user know options were saved.
-  var status = document.getElementById("status");
-  status.innerHTML = chrome.i18n.getMessage('optionsSaved');
-  status.style.display = 'block';
-  setTimeout(function() {
-    status.innerHTML = "";
-  }, 750);
-}
-
-// Restores select box state to saved value from localStorage.
-function restore_options() {
-  var ar = localStorage["automatic_redirect"];
-  if (!ar)
-    return;
-
-  var checkbox = document.getElementById("automatic_redirect");
-  checkbox.checked = true;
-}
-
-function init() {
-  // i18n
-  document.getElementById('optionsTitle').innerHTML = chrome.i18n.getMessage('optionsTitle');
-  document.getElementById('optionsAutoRedirect').innerHTML = chrome.i18n.getMessage('optionsAutoRedirect');
-  document.getElementById('optionsSave').innerHTML = chrome.i18n.getMessage('optionsSave');
-
-  // Options
-  restore_options();
-}
-
-//adding listener when body is loaded to call init function.
-window.addEventListener('load', init, false);
-</script>
-
-<style>
-#status {
-  display: none;
-  margin-left: 3px;
-  padding: 1px 2px;
-  font-size: 15px;
-  color: #f00;
-}
-</style>
-
+<script src="js/options.js"></script>
+<link href="css/options.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-
 <input id="automatic_redirect" type="checkbox" name="redirect" value="yes" />
 <span id="optionsAutoRedirect"></span>
 <br>
 <button onclick="save_options()"><span id="optionsSave"</span></button>
 <br>
-<div id="status"></div>
-
+<span id="status"></span>
 </body>
 </html>

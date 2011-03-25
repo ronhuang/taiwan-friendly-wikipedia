@@ -5,16 +5,16 @@
   "background_page": "background.html",
   "options_page": "options.html",
   "page_action": {
-    "default_icon": "icon-19.png",
+    "default_icon": "img/icon-19.png",
     "default_title": "__MSG_actionTitle__"
   },
   "permissions" : [
     "tabs"
   ],
   "icons" : {
-    "16": "icon-16.png",
-    "48": "icon-48.png",
-    "128": "icon-128.png"
+    "16": "img/icon-16.png",
+    "48": "img/icon-48.png",
+    "128": "img/icon-128.png"
   },
   "default_locale": "en"
 }
