@@ -10,7 +10,8 @@
       // Called when the url of a tab changes.
       function checkForValidUrl(tabId, changeInfo, tab) {
         // If in Chinese Wikipedia but not showing Traditional Chinese...
-        if (tab.url.indexOf('zh.wikipedia.org') == 0) {
+        if (0 == tab.url.indexOf('http://zh.wikipedia.org/') &&
+            0 != tab.url.indexOf('http://zh.wikipedia.org/zh-tw/')) {
           // ... show the page action.
           chrome.pageAction.show(tabId);
         }
