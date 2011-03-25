@@ -10,5 +10,9 @@
   "actionTitle": {
     "message": "將這頁顯示成正體中文",
     "description": "Page action title"
+  },
+  "optionsTitle": {
+    "message": "偏好設定",
+    "description": "Title of the options page"
   }
 }

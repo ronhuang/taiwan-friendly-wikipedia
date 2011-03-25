@@ -3,6 +3,7 @@
   "version": "0.1",
   "description": "__MSG_extDesc__",
   "background_page": "background.html",
+  "options_page": "options.html",
   "page_action": {
     "default_icon": "icon-19.png",
     "default_title": "__MSG_actionTitle__"

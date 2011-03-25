@@ -10,5 +10,21 @@
   "actionTitle": {
     "message": "Show page in Traditional Chinese (Taiwan)",
     "description": "Page action title"
+  },
+  "optionsTitle": {
+    "message": "Options",
+    "description": "Title of the options page"
+  },
+  "optionsAutoRedirect": {
+    "message": "Automatic redirect",
+    "description": "Label for automatic redirect"
+  },
+  "optionsSave": {
+    "message": "Save",
+    "description": "Caption for the save button"
+  },
+  "optionsSaved": {
+    "message": "Saved",
+    "description": "Status for the saving the options"
   }
 }
