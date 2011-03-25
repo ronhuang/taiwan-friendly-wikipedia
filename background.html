@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!--
+ * Copyright (c) 2011 Ron Huang. All rights reserved.  Use of this
+ * source code is governed by a BSD-style license that can be found in the
+ * LICENSE file.
+-->
+<html>
+  <head>
+    <script>
+      // Called when the url of a tab changes.
+      function checkForValidUrl(tabId, changeInfo, tab) {
+        // If in Chinese Wikipedia but not showing Traditional Chinese...
+        if (tab.url.indexOf('zh.wikipedia.org') == 0) {
+          // ... show the page action.
+          chrome.pageAction.show(tabId);
+        }
+      };
+
+      // Listen for any changes to the URL of any tab.
+      chrome.tabs.onUpdated.addListener(checkForValidUrl);
+    </script>
+  </head>
+</html>
