@@ -16,7 +16,7 @@
     "description": "Title of the options page"
   },
   "optionsAutoRedirect": {
-    "message": "Automatic redirect",
+    "message": "Automatic redirection",
     "description": "Label for automatic redirect"
   },
   "optionsAutoRedirectDesc": {
