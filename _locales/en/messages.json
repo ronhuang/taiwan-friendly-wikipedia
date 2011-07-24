@@ -30,5 +30,13 @@
   "optionsSaved": {
     "message": "Saved",
     "description": "Status for the saving the options"
+  },
+  "optionsEnable": {
+    "message": "Enable",
+    "description": "Label for automatic redirect"
+  },
+  "optionsDisable": {
+    "message": "Disable",
+    "description": "Label for automatic redirect"
   }
 }

@@ -6,16 +6,50 @@
 -->
 <html>
   <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title id="optionsTitle"></title>
-    <script src="js/options.js"></script>
-    <link href="css/options.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/options.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/options.css" media="all">
   </head>
 
-  <body>
-    <input id="automatic_redirect" type="checkbox" name="redirect" value="yes" />
-    <span id="optionsAutoRedirect"></span><br />
-    <span id="optionsAutoRedirectDesc"></span><br />
-    <button onclick="save_options()"><span id="optionsSave"></span></button><br />
-    <span id="status"></span>
+  <body id="main_body" >
+
+    <img id="top" src="img/top.png" alt="">
+    <div id="form_container">
+
+      <h1>_</h1>
+      <form class="appnitro">
+        <div class="form_description">
+          <h2><span id="extName"></span></h2>
+          <p><span id="extDesc"></span></p>
+        </div>
+
+        <ul>
+          <li>
+            <label class="description" for="auto_redirect" id="optionsAutoRedirect"></label>
+            <span>
+              <input id="auto_redirect_1" name="auto_redirect" class="element radio" type="radio" value="1" />
+              <label class="choice" for="auto_redirect_1" id="optionsEnable"></label>
+              <input id="auto_redirect_0" name="auto_redirect" class="element radio" type="radio" value="0" />
+              <label class="choice" for="auto_redirect_0" id="optionsDisable"></label>
+            </span>
+            <p class="guidelines" id="guide_1">
+              <small id="optionsAutoRedirectDesc"></small>
+            </p>
+          </li>
+          <li>
+            <span id="status"></span>
+          </li>
+          <li class="buttons">
+            <input id="optionsSave" class="button_text" type="button" name="submit" onclick="save_options()"></input>
+            <span id="status"></span>
+          </li>
+        </ul>
+      </form>
+      <div id="footer">
+      </div>
+    </div>
+
+    <img id="bottom" src="img/bottom.png" alt="">
   </body>
 </html>

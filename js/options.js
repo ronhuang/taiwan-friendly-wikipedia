@@ -6,8 +6,8 @@
 
 // Saves options to localStorage.
 function save_options() {
-  var checkbox = document.getElementById("automatic_redirect");
-  localStorage["automatic_redirect"] = checkbox.checked;
+  var radio = document.getElementById("auto_redirect_1");
+  localStorage["automatic_redirect"] = radio.checked;
 
   // Update status to let user know options were saved.
   var status = document.getElementById("status");
@@ -21,19 +21,26 @@ function save_options() {
 // Restores select box state to saved value from localStorage.
 function restore_options() {
   var ar = JSON.parse(localStorage["automatic_redirect"] || true);
-  if (!ar)
-    return;
-
-  var checkbox = document.getElementById("automatic_redirect");
-  checkbox.checked = true;
+  var radio;
+  if (ar) {
+    radio = document.getElementById("auto_redirect_1");
+  }
+  else {
+    radio = document.getElementById("auto_redirect_0");
+  }
+  radio.checked = true;
 }
 
 function init() {
   // i18n
+  document.getElementById('extName').innerHTML = chrome.i18n.getMessage('extName');
+  document.getElementById('extDesc').innerHTML = chrome.i18n.getMessage('extDesc');
   document.getElementById('optionsTitle').innerHTML = chrome.i18n.getMessage('optionsTitle');
   document.getElementById('optionsAutoRedirect').innerHTML = chrome.i18n.getMessage('optionsAutoRedirect');
   document.getElementById('optionsAutoRedirectDesc').innerHTML = chrome.i18n.getMessage('optionsAutoRedirectDesc');
-  document.getElementById('optionsSave').innerHTML = chrome.i18n.getMessage('optionsSave');
+  document.getElementById('optionsSave').value = chrome.i18n.getMessage('optionsSave');
+  document.getElementById('optionsEnable').innerHTML = chrome.i18n.getMessage('optionsEnable');
+  document.getElementById('optionsDisable').innerHTML = chrome.i18n.getMessage('optionsDisable');
 
   // Options
   restore_options();

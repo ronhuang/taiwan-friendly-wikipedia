@@ -30,5 +30,13 @@
   "optionsSaved": {
     "message": "已儲存",
     "description": "Status for the saving the options"
+  },
+  "optionsEnable": {
+    "message": "啟用",
+    "description": "Label for automatic redirect"
+  },
+  "optionsDisable": {
+    "message": "停用",
+    "description": "Label for automatic redirect"
   }
 }
